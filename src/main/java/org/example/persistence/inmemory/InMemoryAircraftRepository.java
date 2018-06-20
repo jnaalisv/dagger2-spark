@@ -10,6 +10,18 @@ public class InMemoryAircraftRepository implements AircraftRepository {
 
     private final List<String> aircrafts;
 
+    public InMemoryAircraftRepository() {
+        this(
+                Arrays.asList(
+                        "Airbus A350",
+                        "Airbus A330",
+                        "Boeing 747",
+                        "Boeing Dreamliner",
+                        "Fokker"
+                )
+        );
+    }
+
     public InMemoryAircraftRepository(List<String> aircrafts) {
         this.aircrafts = aircrafts;
     }
@@ -17,12 +29,6 @@ public class InMemoryAircraftRepository implements AircraftRepository {
 
     @Override
     public Collection<String> getAll() {
-        return Arrays.asList(
-                "Airbus A350",
-                "Airbus A330",
-                "Boeing 747",
-                "Boeing Dreamliner",
-                "Fokker"
-        );
+        return aircrafts;
     }
 }
