@@ -6,8 +6,11 @@ plugins {
     application
 }
 
+val lombokVersion = "1.18.0"
+
 lombok {
-    version = "1.18.0"
+    version = lombokVersion
+    sha256 = "2c5395d4c80458d01f7a720b2ad667d165357339"
 }
 
 application {
@@ -18,7 +21,6 @@ repositories {
     jcenter()
 }
 
-val lombokVersion = "1.18.0"
 val sparkVersion = "2.7.2"
 val daggerVersion = "2.16"
 
