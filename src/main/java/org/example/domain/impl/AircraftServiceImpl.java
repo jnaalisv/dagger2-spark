@@ -1,7 +1,5 @@
 package org.example.domain.impl;
 
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
 import org.example.domain.AircraftService;
 import org.example.persistence.AircraftRepository;
 
